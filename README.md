@@ -1,14 +1,16 @@
 
-# Introduction #
+# Introduction: Thesis-in-a-Box for IFI-UZH #
 
-This is a template which was compiled to ease the process of writing and publishing thesis at the Institute of Informatics (IFI) of University of Zurich (UZH). It includes what I called *Thesis-in-a-Box*: a script that uses Docker to build the thesis in any platform, without having to be concerned to install LaTeX, Xelatex, fonts, etc.
+This is a template which was compiled to ease the process of writing and publishing thesis at the Institute of Informatics (IFI) of University of Zurich (UZH).
+
+It includes what I called **Thesis-in-a-Box**: a script that uses Docker to build the thesis in any platform, without having to be concerned to install LaTeX, Xelatex, fonts, etc.
 
 The template can be used either to:
 * Ph.D. thesis
 * M.Sc. thesis
 * B.Sc. thesis
 
-However, M.Sc. and B.Sc. thesis would required some adjustments at the current time. It's in my future todo's to enhance that.
+However, M.Sc. and B.Sc. thesis would required some adjustments at the current time. It's in my future todo's to enhance that. If you have some suggestions, [contact me](#contact).
 
 # Disclaimer #
 
@@ -25,24 +27,24 @@ The directory structure is organized as follows:
 * `./chapters`: directory where chapter files (and some auxiliary ones) are located.
 * `./bib`: directory where the bibliography (BibTex) file is located.
 * `./fonts`: directory where all font files are located.
-* `./packages`: directory where additional latex packages are located.
+* `./packages`: directory where additional LaTeX packages are located.
 * `./scripts`: directory where scripts are located. For example, the `build.sh` and `build_docker.sh` scripts are used to build the thesis and generate the final PDF.
 * `./thesis.tex`: file which is the thesis root.
 
 # Thesis-in-a-Box: Installation and How to Use #
 
-The thesis-in-a-box is basically a script that builds your thesis using docker. The advantage is that you don't need to be concerned on how to install LaTeX, how to install fonts, or how to install LaTeX packages. Also, you'll not get desperated if your machine crash -- you can build the thesis at anytime again, from any other machine with docker. However... I assume you have a backup of your thesis content files, don't you? :-)
+The thesis-in-a-box is basically a script that builds your thesis using docker. The advantage is that you don't need to be concerned on how to install LaTeX, how to install fonts, or how to install LaTeX packages. Also, you'll not get desperate if your machine crash -- you can build the thesis at anytime again, from any other machine with docker. However... I assume you have a backup of your thesis content files, don't you? :-)
 
 ## Software required ##
 
 The only required software is Docker and a bash-compatible shell to run the build script.
 
 Thus, follow these tutorials to install Docker for your specific operating system:
-* [OSX][https://docs.docker.com/docker-for-mac/]
-* [Linux][https://docs.docker.com/engine/installation/linux/]
-* [Windows][https://docs.docker.com/docker-for-windows/]
+* [OSX](https://docs.docker.com/docker-for-mac/)
+* [Linux](https://docs.docker.com/engine/installation/linux/)
+* [Windows](https://docs.docker.com/docker-for-windows/)
 
-For Windows, it would be required to have `bash` installed to execute the build script. This [link][http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/] shows how to install it.
+For Windows, it would be required to have `bash` installed to execute the build script. This [link](http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) shows how to install it.
 
 ## How to use it? ##
 
@@ -112,7 +114,7 @@ For example: create the directory `./figs/introduction/sources` to place the sou
 
 The template includes the `todonotes` package which provides a way to highlight ToDo's or comments in the generated PDF.
 
-Documentation and examples o nhow to use this powerful package can be found [here][http://mirrors.ctan.org/macros/latex/contrib/todonotes/todonotes.pdf "Todonotes Package Documentation"]. This is especially useful to communicate and make corrections with your thesis advisor.
+Documentation and examples on how to use this powerful package can be found [here](http://mirrors.ctan.org/macros/latex/contrib/todonotes/todonotes.pdf). This is especially useful to communicate and make corrections with your thesis advisor.
 
 ## Referencing Sections, Chapters, Figures, Equations, ...
 
@@ -124,32 +126,32 @@ For example, if you want to reference a Chapter, you must use:
 [...] as seen in Chapter \ref{chap:introduction} [...]
 ```
 
-If you would like to reference a figure, then, you would need to replace the word `Chapter` to `Figure` in the above example, also updating the label that points to the respetive figure.
+If you would like to reference a figure, then, you would need to replace the word `Chapter` to `Figure` in the above example, also updating the label that points to the respective figure.
 
-## Italics on latin abbreviations ##
+## Italics on Latin abbreviations ##
 
-This thesis template follows what is specified in the Chicago Manual of Style. Thus, "e.g.", "i.e.", or any other latin abbreviation *should not* be written in italics.
+This thesis template follows what is specified in the Chicago Manual of Style. Thus, "e.g.", "i.e.", or any other Latin abbreviation *should not* be written in italics.
 
-More info can be found [here][http://www.chicagomanualofstyle.org "Chicago Manual of Style"].
+More info can be found [here](http://www.chicagomanualofstyle.org).
 
 # Figures used in this Template #
 
 The following figures were used in this thesis template:
 
-* [Lenna][https://en.wikipedia.org/wiki/Lenna]
-* [Suzanne][https://en.wikipedia.org/wiki/Blender_(software)#Suzanne]
-* [Carole Hersee][https://en.wikipedia.org/wiki/Carole_Hersee]
-* [Utah Teapot][https://en.wikipedia.org/wiki/Utah_teapot]
+* [Lenna](https://en.wikipedia.org/wiki/Lenna)
+* [Suzanne](https://en.wikipedia.org/wiki/Blender_(software)#Suzanne)
+* [Carole Hersee](https://en.wikipedia.org/wiki/Carole_Hersee)
+* [Utah Teapot](https://en.wikipedia.org/wiki/Utah_teapot)
 
 # Text used in this template #
 
-Some excerpts of this thesis template were taken from the Tridentine Roman Catholic mass, in latin. The text sources can be be retrieved from [here][http://www.latinliturgy.com/OrdinaryFormMassText.pdf] and [here][http://www.liturgies.net/Liturgies/Catholic/TridentineLatinEnglish.htm].
+Some excerpts of this thesis template were taken from the Tridentine Roman Catholic mass, in latin. The text sources can be be retrieved from [here](http://www.latinliturgy.com/OrdinaryFormMassText.pdf) and [here](http://www.liturgies.net/Liturgies/Catholic/TridentineLatinEnglish.htm).
 
-Other paragraphs are just a repetition of [Lorem Ipsum sample][https://en.wikipedia.org/wiki/Lorem_ipsum].
+Other paragraphs are just a repetition of [Lorem Ipsum sample](https://en.wikipedia.org/wiki/Lorem_ipsum).
 
 # Contact #
 
-I will keep maintaining this template with *YOUR* support. So, don't hesitate to create issues, write me questions, and provide pull requests. :-)
+I will keep maintaining this template with **YOUR** support. So, don't hesitate to create issues, write me questions, and provide pull requests. :-)
 
 Guilherme Sperb Machado <gsm@machados.org>
 
