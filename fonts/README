@@ -1,0 +1,10 @@
+# Installing
+
+The easiest way of "installing" these fonts to the system is to put them in ~/.fonts/ directory (Linux).
+However, by using the .fonts dir the fonts will be available only to your specific user, and not to the whole system.
+
+To make it available to the whole system, put them *somewhere* in /usr/share/fonts -- depending on your Linux distro.
+
+# Contact
+
+Guilherme Sperb Machado <gsm@machados.org>

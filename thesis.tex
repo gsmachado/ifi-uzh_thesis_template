@@ -1,0 +1,126 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass{harvard-thesis}
+
+% ToDo notes package
+\usepackage{packages/todonotes}
+\usepackage{array}
+
+% for much better looking tables
+\usepackage{booktabs}
+
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{varwidth}
+
+\usepackage{amsthm}
+\usepackage{enumitem}
+
+% package used to draw boxes around environments
+\usepackage{mdframed}
+
+% English *and* German are necessary!
+\usepackage[german,english]{babel}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[thm]{Example} % same for example numbers
+\newtheorem{resques}[thm]{Research Question} % same for research questions
+\newtheorem{hypoth}[thm]{Hypothesis} % same for research questions
+\newtheorem*{hypoth*}{Hypothesis} % same for research questions
+
+% These commands are defined for new column types in tables.
+% Sooner or later you will have some trouble with tables, anyway. :-)
+\newcolumntype{M}[1]{>{\begin{varwidth}[t]{#1}}l<{\end{varwidth}}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% If you required that some words should be NEVER be hyphenated,
+% then, include them here:
+%\hyphenation{PiCsMu}
+
+\begin{document}
+
+% Also, there's the possibility to include commands of terms that are
+% used with a high frequency. The advantage of using commands that are
+% translated into text is that, if you have to change the terms, then it
+% will be automatically reflected to the whole text without any effort!
+% You just need to use the commands throughout the thesis, of course.
+%
+%\newcommand{\picsmu}{PiCsMu}
+%\newcommand{\picsmuuser}[1]{\picsmu user#1}
+%\newcommand{\picsmuapplication}[1]{\picsmu application}
+%\newcommand{\picsmusystem}[1]{\picsmu system}
+%\newcommand{\cloud}[1]{Cloud#1}
+
+%\newcommand{\ptopnetwork}[1]{P2P network#1}
+%\newcommand{\ptopsystem}[1]{P2P system#1}
+
+%\newcommand{\cloudcomputing}{Cloud computing}
+%\newcommand{\cloudservice}[1]{Cloud service#1}
+%\newcommand{\cloudprovider}[1]{Cloud provider#1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% the front matter
+\input{cover/coverpage}
+
+% If the title gets too long that the cover is placed to the second page, then, you should adjust the
+% "beforeTitle" and "afterTitle" attributes. Setting these attributes overwrite the default values,
+% which are 70pt, respectively.
+% Example: \coveruzh[beforeTitle=60pt, afterTitle=50pt]
+\coveruzh
+
+%\copyrightpage
+\frontmatter
+\abstractpage
+\kurzfassungspage
+\tableofcontents
+%\authorlist
+%\dedicationpage
+
+\vspace*{\fill} \newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\setstretch{1.1}
+
+\mainmatter
+
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+\include{chapters/chapter3}
+\include{chapters/chapterN}
+
+\singlespacing
+\backmatter
+
+% The cleardoublepage and phantomsection commands are needed because
+% the "Reference" chapter was wrong in the index hyperlinks
+% Now, it's correct.
+\cleardoublepage\phantomsection
+
+% the back matter
+\clearpage
+\addcontentsline{toc}{chapter}{References}
+
+{\small
+\setstretch{1.1}
+\bibliography{bib/rfc}}
+
+\bibliographystyle{amsplain}
+
+\include{chapters/appendix}
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\acknowledgments
+\cv
+
+\end{document}
