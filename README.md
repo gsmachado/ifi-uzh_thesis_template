@@ -50,7 +50,14 @@ For Windows, it would be required to have `bash` installed to execute the build 
 
 It's pretty easy to "build" and generate the PDF output.
 
-Just execute:
+First, clone this git repository:
+
+```
+$ git clone https://github.com/gsmachado/ifi-uzh_thesis_template.git
+$ cd ifi-uzh_thesis_template
+```
+
+Then, execute:
 
 ```
 $ sh ./scripts/thesis-in-a-box.sh -r `pwd`
