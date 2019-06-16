@@ -1,5 +1,5 @@
 
-# Introduction: Thesis-in-a-Box for IFI-UZH #
+# Thesis-in-a-Box for IFI-UZH #
 
 This is a template which was compiled to ease the process of writing and publishing thesis at the Institute of Informatics (IFI) of University of Zurich (UZH).
 
