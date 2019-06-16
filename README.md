@@ -10,11 +10,11 @@ The template can be used either to:
 * M.Sc. thesis
 * B.Sc. thesis
 
-However, M.Sc. and B.Sc. thesis would required some adjustments at the current time. It's in my future todo's to enhance that. If you have some suggestions, [contact me](#contact).
+However, if you think that such template requires some adjustments, either [contact me](#contact) or do a pull request. I'm open to hear different needs and adapt it.
 
 # Disclaimer #
 
-The best practices and rules presented here are not continuously supported by IFI-UZH -- but by individuals that contribute in a free will. It means that: if the formal thesis structure changes in future, there's no guarantee that this template will be updated.
+The best practices and rules presented here are not officially supported by IFI-UZH -- but by individuals that contribute in a free will. It means that: if the formal thesis structure changes in future, there's no guarantee that this template will be updated.
 
 Thus, by cloning/downloading this thesis template you agree to use it at your own risk.
 
@@ -33,7 +33,7 @@ The directory structure is organized as follows:
 
 # Thesis-in-a-Box: Installation and How to Use #
 
-The thesis-in-a-box is basically a script that builds your thesis using docker. The advantage is that you don't need to be concerned on how to install LaTeX, how to install fonts, or how to install LaTeX packages. Also, you'll not get desperate if your machine crash -- you can build the thesis at anytime again, from any other machine with docker. However... I assume you have a backup of your thesis content files, don't you? :-)
+The thesis-in-a-box is basically a script that builds your thesis using docker. The advantage is that you don't need to be concerned on how to install LaTeX, how to install fonts, or how to install LaTeX packages. Also, you'll not get desperate if your machine crash -- you can build the thesis at anytime again, from any other machine with docker. However... I assume you have a backup of your **thesis content files**, don't you? :-)
 
 ## Software required ##
 
@@ -41,8 +41,8 @@ The only required software is Docker and a bash-compatible shell to run the buil
 
 Thus, follow these tutorials to install Docker for your specific operating system:
 * [OSX](https://docs.docker.com/docker-for-mac/)
-* [Linux](https://docs.docker.com/engine/installation/linux/)
-* [Windows](https://docs.docker.com/docker-for-windows/)
+* [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+* [Windows](https://docs.docker.com/docker-for-windows/install/)
 
 For Windows, it would be required to have `bash` installed to execute the build script. This [link](http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) shows how to install it.
 
